@@ -1,3 +1,16 @@
+const apiKey = 'your-api-key';
+fetch('https://quotes.rest/qod.json', {
+    headers: {
+        'Authorization': `Bearer ${apiKey}`
+    }
+})
+.then(response => response.json())
+.then(data => {
+    // Handle the API response
+})
+.catch(error => {
+    // Handle errors
+});
 document.addEventListener("DOMContentLoaded", getQuote);
 
 document.getElementById("get-quote").addEventListener("click", getQuote);
