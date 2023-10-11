@@ -1,0 +1,27 @@
+{
+    "baseurl": "https://theysaidso.com",
+    "contents": {
+        "quotes": [
+            {
+                "author": "Steve Maraboli",
+                "background": "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg",
+                "category": "inspire",
+                "date": "2020-02-02",
+                "id": "nwW3g7V0xszGDNIehz6yTgeF",
+                "language": "en",
+                "length": "135",
+                "permalink": "https://theysaidso.com/quote/steve-maraboli-if-you-respect-yourself-in-stressful-situations-it-will-help-you",
+                "quote": "If you respect yourself in stressful situations, it will help you see the positiveâ€¦ It will help you see the message in the mess.",
+                "tags": [],
+                "title": "Inspiring Quote of the day"
+            }
+        ]
+    },
+    "copyright": {
+        "url": "https://theysaidso.com",
+        "year": 2022
+    },
+    "success": {
+        "total": 1
+    }
+}
