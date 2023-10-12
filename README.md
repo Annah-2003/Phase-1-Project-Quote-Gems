@@ -36,15 +36,34 @@ It also implements event listeners for user interactions, such as clicking a but
 I have put in comments to provide explanations for each section of the code.
 
 ## Code Samples
+ <title>Quote of the Day</title> is for HTML (index.html)
+The JavaScript file contains the functionality of my website                                                                 function getQuote() {
+    fetch("")
+        .then((response) => response.json())
+        .then((data) => {
+            const quoteText = data.contents.quotes[0].quote;
+            const quoteAuthor = data.contents.quotes[0].author;
 
+            document.getElementById("quote-text").textContent = `"${quoteText}"`;
+            document.getElementById("quote-author").textContent = `- ${quoteAuthor}`;
+        })
+        .catch((error) => {
+            console.error("Error fetching quote:", error);
+        });
+}
 
-
-
-
+The CSS file is responsible for styling the webpage, making it visually appealing and responsive.
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(218, 39, 143);
+    margin: 0;
+    padding: 0;
+}
 
 ## Demo Screenshots 
 
-
+![Alt Text]
 
 
 
@@ -56,7 +75,7 @@ I have put in comments to provide explanations for each section of the code.
 
 
 
-##License
+##  License
 This project is licensed under the MIT License.
 
 
