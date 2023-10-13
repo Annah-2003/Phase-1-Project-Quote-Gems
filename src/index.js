@@ -1,24 +1,25 @@
-const apiKey = 'aJ3onTKlQ3uwSvVJJ4DygAdCZPxUQ9C9RztA4eEl';
-
+// Wait for the DOM (document) to be fully loaded before executing the code
 document.addEventListener("DOMContentLoaded", getQuote);
 
+// Attach a click event listener to the "Get Quote" button
 document.getElementById("get-quote").addEventListener("click", getQuote);
 
+// Function to fetch a random quote and update the page
 function getQuote() {
-    fetch('https://quotes.rest/qod.json', {
-        headers: {
-            'X-TheySaidSo-Api-Secret': apiKey
-        }
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        const quoteText = data.contents.quotes[0].quote;
-        const quoteAuthor = data.contents.quotes[0].author;
+    // Sends a GET request to the "https://api.quotable.io/random" API
+    fetch('https://api.quotable.io/random')
+        .then((response) => response.json()) // Parse the response as JSON
+        .then((data) => {
+            // Extract the quote text and author from the response data
+            const quoteText = data.content;
+            const quoteAuthor = data.author;
 
-        document.getElementById("quote-text").textContent = `"${quoteText}"`;
-        document.getElementById("quote-author").textContent = `- ${quoteAuthor}`;
-    })
-    .catch((error) => {
-        console.error("Error fetching quote:", error);
-    });
+            // Update the HTML elements with the retrieved quote
+            document.getElementById("quote-text").textContent = `"${quoteText}"`;
+            document.getElementById("quote-author").textContent = `- ${quoteAuthor}`;
+        })
+        .catch((error) => {
+            // Handle errors, if any, and log them to the console
+            console.error("Error fetching quote:", error);
+        });
 }
