@@ -3,11 +3,11 @@
 
 
 ##  Description:
-This is a straightforward website that displays a new inspiring or motivational quote every day when users visit the site. The website will fetch a daily quote from a public quote API and present it in a user-friendly manner.
+This is a straightforward website that displays a new inspiring and motivational quote every day when users visit the site. The website will fetch a daily quote from a public quote API and present it in a user-friendly manner.
 
 
 ##  API Used:
-For this project, I have used a public quote API like the "They Said So Quotes" API, which provides a free API endpoint to fetch daily quotes.
+https://api.quotable.io/random. This API allows you to fetch random quotes and even get a daily quote which you like
 
 
 ##  Features
@@ -62,15 +62,15 @@ body {
 }
 
 ## Demo Screenshots 
+file:///home/irene/Pictures/Screenshot%20from%202023-10-13%2021-09-38.png
 
-![Alt Text]
 
 
 
 
 
 ##  Credits
-
+Credits to quotable api for the public api
 
 
 
